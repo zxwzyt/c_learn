@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include "/Users/anita/Documents/code/my_code/c_practice/bits/stdc++.h"
 using namespace std;
 
 const int N = 100005;
@@ -19,15 +19,15 @@ int insert(int v, int x)
         t[x].val = v;
         t[x].l = 0;
         t[x].r = 0;
-
+        
         return x;
     }
-
+    
     if (t[x].val > v)
         t[x].l = insert(v, t[x].l);
     else
         t[x].r = insert(v, t[x].r);
-
+    
     return x;
 }
 
@@ -55,11 +55,11 @@ vector<int> getAnswer(int n, vector<int> sequence) {
     root = cnt = 0;
     for (int i = 0; i < int(sequence.size()); ++i)
         root = insert(sequence[i], root);
-
+    
     vector<int> ans;
     dlr(root, ans);
     lrd(root, ans);
-
+    
     return ans;
 }
 
@@ -79,3 +79,4 @@ int main() {
         printf("%d%c", ans[n + i], " \n"[i == n - 1]);
     return 0;
 }
+
