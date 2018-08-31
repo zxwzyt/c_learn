@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0854872A2125223500DE284B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 085487282125223500DE284B /* main.c */; };
-		0854872B2125223500DE284B /* max.c in Sources */ = {isa = PBXBuildFile; fileRef = 085487292125223500DE284B /* max.c */; };
+		08494E4621267154008B8BA3 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08494E4521267154008B8BA3 /* Main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08494E4521267154008B8BA3 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = "../../../算法训练营/大转盘/b62631f8fb3722232fb454a532e0740f6eb6d9b0/Main.cpp"; sourceTree = "<group>"; };
 		0854871E2125221A00DE284B /* main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = main; sourceTree = BUILT_PRODUCTS_DIR; };
-		085487282125223500DE284B /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../main.c; sourceTree = "<group>"; };
-		085487292125223500DE284B /* max.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = max.c; path = ../../max.c; sourceTree = "<group>"; };
-		0854872D212522CD00DE284B /* max.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = max.h; sourceTree = "<group>"; };
-		0854873121252C2400DE284B /* min.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = min.h; path = ../../min.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +57,7 @@
 		085487202125221A00DE284B /* main */ = {
 			isa = PBXGroup;
 			children = (
-				085487282125223500DE284B /* main.c */,
-				0854873121252C2400DE284B /* min.h */,
-				085487292125223500DE284B /* max.c */,
-				0854872D212522CD00DE284B /* max.h */,
+				08494E4521267154008B8BA3 /* Main.cpp */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -126,8 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0854872B2125223500DE284B /* max.c in Sources */,
-				0854872A2125223500DE284B /* main.c in Sources */,
+				08494E4621267154008B8BA3 /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +246,7 @@
 				085487272125221A00DE284B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

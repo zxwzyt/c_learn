@@ -52,26 +52,26 @@ struct point
 // void output(struct point);
 // void print(const struct point *p);
 
-int main()
-{
-	// struct rect screen;
-	// struct point middle;
-	// screen.pt1 = makepoint(0, 0);
-	// screen.pt2 = makepoint(4, 6);
-	// middle = makepoint((screen.pt1.x + screen.pt2.x)/2, (screen.pt1.y + screen.pt2.y)/2);
+// int main()
+// {
+// 	// struct rect screen;
+// 	// struct point middle;
+// 	// screen.pt1 = makepoint(0, 0);
+// 	// screen.pt2 = makepoint(4, 6);
+// 	// middle = makepoint((screen.pt1.x + screen.pt2.x)/2, (screen.pt1.y + screen.pt2.y)/2);
 	
-	// printf("%d %d\n", middle.x, middle.y);
-	struct point y = {0, 0};
-	//y = getStruct();不推荐这个方式
+// 	// printf("%d %d\n", middle.x, middle.y);
+// 	struct point y = {0, 0};
+// 	//y = getStruct();不推荐这个方式
 
-	struct point *p;
-	p = getStruct(&y);
-	output(y);
-	output(*p);
-	print(p);
+// 	struct point *p;
+// 	p = getStruct(&y);
+// 	output(y);
+// 	output(*p);
+// 	print(p);
 
-	return 0;
-}
+// 	return 0;
+// }
 
 /**
  * 不推荐这个方式
