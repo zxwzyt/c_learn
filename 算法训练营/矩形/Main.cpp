@@ -66,9 +66,11 @@ vector<pair<int, int>> getAnswer() {
         {
             if (i < p)
             {
-                
+                t1 = (t1 * pw + h1[0][i][j]) % mo1;
+                t2 = (t2 * pw + h2[0][i][j]) % mo2;
             } else {
                 t1 = h1[1][i][j] = (t1 * pw + h1[0][i][j] + p1 * h1[0][i-p][j]) % mo1;
+                t2 = h2[1][i][j] = (t2 * pw + h2[0][i][j] + p2 * h2[0][i-p][j]) % mo2;
             }
         }
     }
@@ -85,7 +87,8 @@ vector<pair<int, int>> getAnswer() {
     p1 = p2 = 0;
     for (int i = 1; i <= p; ++i)
     {
-        /* code */
+        p1 = (p1 * pw + bb[0][i][q]) % mo1;
+        p2 = (p2 * pw + bb[1][i][q]) % mo2;
     }
 
     vector<pii> ans;

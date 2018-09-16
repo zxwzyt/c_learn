@@ -34,6 +34,10 @@ vector<int> getAnswer(int n, int k) {
     	for (int j = i+i; j <= n; j += i)
     	{
     		isPrime[j] = 0;
+            if (!isPrime[i])
+            {
+                isDeng[j] = 0;
+            }
     	}
     }
 

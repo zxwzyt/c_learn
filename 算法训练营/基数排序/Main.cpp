@@ -33,8 +33,8 @@ u32 hashArr(u32* a, int n) {
 // 以上代码不需要解释，你只需要知道这是用于生成数据的就行了
 const int N = 100000000;
 /* 请在这里定义你需要的全局变量 */
-u32 a[N+1];
-u32 _a[N+1];
+u32 a[N + 1];
+u32 _a[N + 1];
 
 const int m = 16;
 const int B = 1 << m;
@@ -49,23 +49,19 @@ void sorting(int n, int k) {
     memset(sum, 0, sizeof(sum));
     for (int i = 0; i < n; ++i)
         ++sum[a[i] & b];
-
     for (int i = 1; i < B; ++i)
         sum[i] += sum[i-1];
-
     for (int i = n - 1; i >= 0; --i)
-        _a[sum[a[i] & b]--] = a[i];
+        _a[--sum[a[i] & b]] = a[i];
 
     memset(sum, 0, sizeof(sum));
 
     for(int i = 0; i < n; ++i)
         ++sum[(_a[i] >> m) & b];
-
     for (int i = 1; i < B; ++i)
         sum[i] += sum[i-1];
-
     for (int i = n - 1; i >= 0; --i)
-        a[sum[(_a[i] >> m) & b]--] = _a[i];
+        a[--sum[(_a[i] >> m) & b]] = _a[i];
 }
 
 // ================= 代码实现结束 =================

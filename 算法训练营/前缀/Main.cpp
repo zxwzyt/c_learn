@@ -35,6 +35,7 @@ void dfs(int x) {
         if (z)
         {
             dfs(z);
+            sz[x] += sz[z];
         }
     }
 }
@@ -48,9 +49,8 @@ int walk(char *s) {
     {
         int y = *s - 'a';
         if (!c[x][y])
-        {
             return 0;
-        }
+        x = c[x][y];
     }
 
     return x;

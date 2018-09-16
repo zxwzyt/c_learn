@@ -26,10 +26,16 @@ int getAnswer() {
 
     for (int i = 1; i <= n; ++i)
     {
-    	
+    	if (p[i])
+        {
+            f[i] = f[i - 1] + f[i - 1] - f[p[i] - 1] + mo;
+        } else {
+            f[i] = f[i - 1] + f[i - 1] + 1;
+        }
+        f[i] %= mo;
     }
 
-    return f[n;]
+    return f[n];
 }
 
 // ================= 代码实现结束 =================

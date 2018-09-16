@@ -31,13 +31,13 @@ long long getAnswer(string str) {
     {
     	int &now = len[i], pos = (cur << 1) - i;
     	now = max(min(len[pos],cur + len[cur] - i), 0);
-    	while (s[i - now -1] == s[])
+    	while (s[i - now -1] == s[i + now + 1])
     		++now;
     	if (i + now > cur + len[cur])
     	{
     		cur = i;
     	}
-    	ans +=
+    	ans += (now + 1) >> 1;
     }
 
     return ans;
